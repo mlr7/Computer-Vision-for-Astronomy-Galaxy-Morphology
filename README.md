@@ -27,7 +27,29 @@ For our purposes, this is what we need to know:
     ├── Class 8 (1423 images): Edge-on Galaxies without Bulge   
     └── Class 9 (1873 images): Edge-on Galaxies with Bulge   
 
-We select 2 distinct classes of galaxy morphologies and train a neural network to distinguish the galaxy types, and then implement GradCAM to understand what the neural network has learned in pixel space.
+----
+
+There are several key factors that drive the different morphologies and shapes we observe in galaxies:
+
+* Spin/Angular Momentum: The angular momentum of the primordial gas clouds from which galaxies formed determines if they flatten into spinning disks or remain more spherical. Higher spin produces spiral and disk shaped galaxies.
+
+* Stellar Mass: More massive galaxies tend to become ellipticals, while less massive galaxies tend to be spirals. Massive galaxies fuse together their gas early and fast, favoring an elliptical shape.
+
+* Gas Availability: Spiral galaxies retain significant gas reservoirs to sustain ongoing star formation. Elliptical galaxies use up their gas rapidly, leaving little left to form new stars or spiral arms.
+
+* Mergers: Galaxy collisions can transform spiral galaxies into ellipticals by disrupting structures and redistributing stars and gas.
+
+* Dark Matter Halos: The shape and concentration of dark matter halos surrounding galaxies impacts the distribution of ordinary matter.
+
+* Supermassive Black Holes: Active galactic nuclei and black hole feedback can heat and eject cold gas needed for star formation in spirals.
+
+* Environment: Galaxies in crowded clusters tend to become ellipticals, while isolated field galaxies retain their gas and spiral shapes.
+
+* Time: Younger galaxies tend to be more gaseous and disk-like. Older galaxies use up their gas and transform into spheroids.
+
+To summarize, the interplay between mass, angular momentum, gas contents, mergers, environment, and time drive the different galaxy morphologies we see in the magnificent galaxy population we observe from our tiny perch on the third rock from the Sun.
+
+In this study, we select 2 distinct classes of galaxy morphologies and train a neural network to distinguish the galaxy types, and then implement GradCAM to understand what the neural network has learned in pixel space.
 
 We work with Class 2: Round Smooth Galaxies, and Class 5: Barred Spiral Galaxies.
 

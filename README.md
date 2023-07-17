@@ -1,4 +1,7 @@
 # Computer-Vision-for-Astronomy-Galaxy-Morphology
+
+![](img/heatmap_header.png)
+
 Data prep, CNN model training, performance evaluation, and pixel heatmap visualization for galaxy morphology classification
 
 ## Data Overview
